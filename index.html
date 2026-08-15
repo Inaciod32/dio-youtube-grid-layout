@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de listagem de vídeos inspirada no YouTube, desenvolvida para o desafio de CSS Grid da DIO.">
+  <title>DevTube | Davi Inacio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__start">
+      <button class="icon-button" aria-label="Abrir menu">
+        <span class="menu-icon">☰</span>
+      </button>
+
+      <a class="brand" href="#" aria-label="Página inicial do DevTube">
+        <span class="brand__play">▶</span>
+        <span class="brand__name">DevTube</span>
+      </a>
+    </div>
+
+    <form class="search" role="search">
+      <label class="sr-only" for="search-input">Pesquisar</label>
+      <input id="search-input" type="search" placeholder="Pesquisar">
+      <button type="submit" aria-label="Pesquisar">⌕</button>
+    </form>
+
+    <div class="topbar__end">
+      <button class="icon-button" aria-label="Criar vídeo">▣</button>
+      <button class="icon-button" aria-label="Notificações">♢</button>
+      <button class="avatar avatar--profile" aria-label="Abrir perfil">DI</button>
+    </div>
+  </header>
+
+  <aside class="sidebar" aria-label="Navegação principal">
+    <nav>
+      <a class="sidebar__item sidebar__item--active" href="#"><span>⌂</span><strong>Início</strong></a>
+      <a class="sidebar__item" href="#"><span>◉</span><span>Explorar</span></a>
+      <a class="sidebar__item" href="#"><span>▤</span><span>Inscrições</span></a>
+      <a class="sidebar__item" href="#"><span>▱</span><span>YouTube Music</span></a>
+      <a class="sidebar__item" href="#"><span>▣</span><span>Vídeos que gostei</span></a>
+      <a class="sidebar__item" href="#"><span>◷</span><span>Assistir mais tarde</span></a>
+      <a class="sidebar__item" href="#"><span>⇩</span><span>Downloads</span></a>
+      <a class="sidebar__item" href="#"><span>▥</span><span>Filmes</span></a>
+      <a class="sidebar__item" href="#"><span>⌁</span><span>Aprender</span></a>
+      <a class="sidebar__item" href="#"><span>⚑</span><span>Esportes</span></a>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <section class="video-grid" aria-label="Vídeos recomendados">
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-html.svg" alt="Capa do vídeo HTML do zero"><span class="duration">12:48</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">HTML do zero: entendendo a estrutura de uma página</a></h2><p>Davi Inacio Dev</p><p>2,1 mil visualizações • há 3 dias</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-css.svg" alt="Capa do vídeo CSS na prática"><span class="duration">18:20</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">CSS na prática: seletores, cores e espaçamentos</a></h2><p>Davi Inacio Dev</p><p>1,8 mil visualizações • há 5 dias</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-grid.svg" alt="Capa do vídeo CSS Grid"><span class="duration">22:15</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">CSS Grid: criando layouts em linhas e colunas</a></h2><p>Davi Inacio Dev</p><p>3,4 mil visualizações • há 1 semana</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-flex.svg" alt="Capa do vídeo Flexbox"><span class="duration">16:03</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Flexbox sem mistério: alinhamento passo a passo</a></h2><p>Davi Inacio Dev</p><p>1,2 mil visualizações • há 1 semana</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-git.svg" alt="Capa do vídeo Git e GitHub"><span class="duration">14:39</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Git e GitHub para quem está começando</a></h2><p>Davi Inacio Dev</p><p>980 visualizações • há 2 semanas</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-js.svg" alt="Capa do vídeo JavaScript"><span class="duration">25:10</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">JavaScript: variáveis, tipos e primeiros exercícios</a></h2><p>Davi Inacio Dev</p><p>4,7 mil visualizações • há 2 semanas</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-responsive.svg" alt="Capa do vídeo responsividade"><span class="duration">19:42</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Responsividade: fazendo o site funcionar no celular</a></h2><p>Davi Inacio Dev</p><p>2,6 mil visualizações • há 3 semanas</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-portfolio.svg" alt="Capa do vídeo portfólio"><span class="duration">11:58</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Como organizar seu primeiro portfólio Front-end</a></h2><p>Davi Inacio Dev</p><p>1,5 mil visualizações • há 3 semanas</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-debug.svg" alt="Capa do vídeo DevTools e depuração"><span class="duration">17:31</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">DevTools: encontrando erros no HTML e CSS</a></h2><p>Davi Inacio Dev</p><p>890 visualizações • há 1 mês</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-web.svg" alt="Capa do vídeo Internet e Web"><span class="duration">13:06</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Internet x Web: cliente, servidor, HTTP e URL</a></h2><p>Davi Inacio Dev</p><p>2,9 mil visualizações • há 1 mês</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-project.svg" alt="Capa do vídeo projeto Front-end"><span class="duration">28:44</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Projeto Front-end: do Figma ao navegador</a></h2><p>Davi Inacio Dev</p><p>5,3 mil visualizações • há 1 mês</p></div></div></article>
+      <article class="video-card"><a href="#" class="video-card__thumbnail"><img src="assets/thumb-career.svg" alt="Capa do vídeo carreira Front-end"><span class="duration">15:27</span></a><div class="video-card__body"><div class="avatar avatar--channel">DI</div><div class="video-card__info"><h2><a href="#">Roteiro de estudos para sua primeira vaga Front-end</a></h2><p>Davi Inacio Dev</p><p>6,1 mil visualizações • há 1 mês</p></div></div></article>
+    </section>
+  </main>
+</body>
+</html>
